@@ -95,9 +95,19 @@ The maximum stress was monitored as the number of elements increased from about 
 
 
 
+### Effect of Mesh on Damage
+
+The tensile damage variable (DAMAGET) was compared for two different meshes. The maximum tensile damage is 0.13 for the first mesh and 0.55 for the second. In the second mesh, the damage localizes in inclined bands near the loading points, while in the first mesh it remains small and distributed. This shows that the predicted damage level depends on the mesh, which is typical for softening concrete models where damage localizes in a narrow band of elements. For this reason, the comparison between the two beam configurations was carried out with the same mesh.
+
+
+
+![Results](Results.png)
+
+
 ## Limitations
 
 - The study is numerical; no experimental comparison is included.
+- The predicted damage depends on the mesh (see Effect of Mesh on Damage), so damage values should be compared only between models with the same mesh.
 - The complete Abaqus project files are not included in this repository.
 
 ## Software
